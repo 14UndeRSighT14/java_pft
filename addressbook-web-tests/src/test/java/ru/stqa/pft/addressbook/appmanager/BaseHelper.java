@@ -5,10 +5,10 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class HelperBase {
+public class BaseHelper {
   protected FirefoxDriver wd;
 
-  public HelperBase(FirefoxDriver wd) {
+  public BaseHelper(FirefoxDriver wd) {
     this.wd = wd;
   }
 
