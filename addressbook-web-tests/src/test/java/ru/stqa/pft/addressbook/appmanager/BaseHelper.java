@@ -27,6 +27,10 @@ public class BaseHelper {
     click(listValueLocator);
   }
 
+  protected void closeAlert (){
+    wd.switchTo().alert().accept();
+  }
+
   public  boolean isAlertPresent (){
     try{
       wd.switchTo().alert();

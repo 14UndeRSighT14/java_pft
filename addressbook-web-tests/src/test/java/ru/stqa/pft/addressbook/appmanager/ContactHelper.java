@@ -33,8 +33,8 @@ public class ContactHelper extends BaseHelper {
     type(By.name("email2"), contactData.getEmail2());
     type(By.name("email3"), contactData.getEmail3());
     type(By.name("homepage"), contactData.getHomepage());
-    selectListValue(By.name("bday"), By.xpath("//div[@id='content']/form/select/option[16]"), contactData.getBday());
-    selectListValue(By.name("bmonth"), By.xpath("//div[@id='content']/form/select[2]/option[2]"), contactData.getBmonth());
+    selectListValue(By.name("bday"), By.xpath("//div[@id='content']/form/select/option[@value='"+contactData.getBday()+"']"), contactData.getBday());
+    selectListValue(By.name("bmonth"), By.xpath("//div[@id='content']/form/select[2]/option[@value='"+contactData.getBmonth()+"']"), contactData.getBmonth());
     type(By.name("byear"), contactData.getByear());
     type(By.name("address2"), contactData.getAddress2());
     type(By.name("phone2"), contactData.getPhone2());
@@ -43,5 +43,22 @@ public class ContactHelper extends BaseHelper {
 
   public void initContactCreation() {
     click(By.linkText("add new"));
+  }
+
+  public void selectGroup() {
+    click(By.name("selected[]"));
+  }
+
+  public void initContactModification() {
+    click(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public void submitContactModification() {
+    click(By.xpath("//div[@id='content']/form/input[22]"));
+  }
+
+  public void deleteSelectedContacts() {
+    click(By.xpath("//input[@value='Delete']"));
+    closeAlert();
   }
 }
