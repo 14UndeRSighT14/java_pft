@@ -8,6 +8,8 @@ import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactHelper extends BaseHelper {
 
+  private boolean creation;
+
   public ContactHelper(WebDriver wd) {
     super(wd);
   }
@@ -67,5 +69,16 @@ public class ContactHelper extends BaseHelper {
   public void deleteSelectedContacts() {
     click(By.xpath("//input[@value='Delete']"));
     closeAlert();
+  }
+
+  public void createContact(ContactData contact, boolean creation) {
+    initContactCreation();
+    fillPartContactForm(contact, creation);
+    submitContactCreation();
+    returnToHomePage();
+  }
+
+  public boolean isThereAGroup() {
+    return isElementPresent(By.name("selected[]"));
   }
 }

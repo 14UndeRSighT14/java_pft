@@ -8,10 +8,24 @@ public class ContactModificationTests extends TestBase{
   @Test
   public void testContactModification() throws Exception {
     app.getNavigationHelper().gotoHomePage();
+    if (! app.getContactHelper().isThereAGroup()) {
+      app.getContactHelper().createContact(new ContactData("Name1", "Name2",
+              "Name3", "Super", "Title", "Super", "Address",
+              "8(3472)111111", "89871111111", "89872222222", "test1@mail.ru",
+              "test2@mail.ru", "test3@mail.ru", "www.yandex.ru",
+              "14", "January", "1925", "test1", "Address2",
+              "89874444444", "Notes"), true);
+    }
     app.getContactHelper().selectGroup();
     app.getContactHelper().initContactModification();
-    app.getContactHelper().fillPartContactForm(new ContactData("IzmName1", "IzmName2", "IzmName3", "IzmSuper", "IzmTitle", "IzmSuper", "IzmAddress", "8(3472)111111", "89871111111", "89872222222", "Izmtest1@mail.ru", "Izmtest2@mail.ru", "Izmtest3@mail.ru", "www.yandex.ru", "25", "May", "1989", null, "IzmAddress2", "89874444444", "IzmNotes"), false);
+    app.getContactHelper().fillPartContactForm(new ContactData("IzmName1", "IzmName2",
+            "IzmName3", "IzmSuper", "IzmTitle", "IzmSuper", "IzmAddress",
+            "8(3472)111111", "89871111111", "89872222222", "Izmtest1@mail.ru",
+            "Izmtest2@mail.ru", "Izmtest3@mail.ru", "www.yandex.ru",
+            "25", "May", "1989", null, "IzmAddress2",
+            "89874444444", "IzmNotes"), false);
     app.getContactHelper().submitContactModification();
     app.getContactHelper().returnToHomePage();
+
   }
 }
