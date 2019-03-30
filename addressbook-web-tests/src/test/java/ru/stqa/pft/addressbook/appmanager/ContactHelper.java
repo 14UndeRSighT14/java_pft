@@ -1,7 +1,9 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactHelper extends BaseHelper {
@@ -18,7 +20,7 @@ public class ContactHelper extends BaseHelper {
     click(By.xpath("//div[@id='content']/form/input[21]"));
   }
 
-  public void fillPartContactForm(ContactData contactData) {
+  public void fillPartContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getFirstname());
     type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("lastname"), contactData.getLastname());
@@ -33,8 +35,13 @@ public class ContactHelper extends BaseHelper {
     type(By.name("email2"), contactData.getEmail2());
     type(By.name("email3"), contactData.getEmail3());
     type(By.name("homepage"), contactData.getHomepage());
-    selectListValue(By.name("bday"), By.xpath("//div[@id='content']/form/select/option[@value='"+contactData.getBday()+"']"), contactData.getBday());
-    selectListValue(By.name("bmonth"), By.xpath("//div[@id='content']/form/select[2]/option[@value='"+contactData.getBmonth()+"']"), contactData.getBmonth());
+    selectListValue(By.name("bday"), contactData.getBday());
+    selectListValue(By.name("bmonth"), contactData.getBmonth());
+    if (creation) {
+      selectListValue(By.name("new_group"), contactData.getGroup());
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }
     type(By.name("byear"), contactData.getByear());
     type(By.name("address2"), contactData.getAddress2());
     type(By.name("phone2"), contactData.getPhone2());

@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -26,10 +27,8 @@ public class BaseHelper {
       }
     }
   }
-  protected void selectListValue (By listLocator, By listValueLocator, String text){
-    click(listLocator);
-    new Select(wd.findElement(listLocator)).selectByVisibleText(text);
-    click(listValueLocator);
+  protected void selectListValue (By locator, String text){
+    new Select(wd.findElement(locator)).selectByVisibleText(text);
   }
 
   protected void closeAlert (){
@@ -42,6 +41,15 @@ public class BaseHelper {
       return true;
     } catch (NoAlertPresentException e) {
       return false;
+    }
+  }
+
+  protected boolean isElementPresent(By locator) {
+    try{
+      wd.findElement(locator);
+      return true;
+    } catch (NoSuchElementException ex) {
+      return  false;
     }
   }
 }
