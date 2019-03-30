@@ -2,13 +2,13 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class BaseHelper {
-  protected FirefoxDriver wd;
+  protected WebDriver wd;
 
-  public BaseHelper(FirefoxDriver wd) {
+  public BaseHelper(WebDriver wd) {
     this.wd = wd;
   }
 
