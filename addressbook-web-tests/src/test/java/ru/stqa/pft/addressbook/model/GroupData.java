@@ -21,10 +21,6 @@ public class GroupData {
     this.footer = footer;
   }
 
-  public void setId(int id) {
-    this.id = id;
-  }
-
   public String getName() {
     return name;
   }
@@ -35,6 +31,10 @@ public class GroupData {
 
   public String getFooter() {
     return footer;
+  }
+
+  public void setId(int id) {
+    this.id = id;
   }
 
   public int getId() {
@@ -63,5 +63,5 @@ public class GroupData {
   public int hashCode() {
     return name != null ? name.hashCode() : 0;
   }
-  
+
 }
