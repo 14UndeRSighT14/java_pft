@@ -4,26 +4,26 @@ public class ContactData {
 
   private int id;
   private final String firstname;
-  private final String middlename;
+  private String middlename;
   private final String lastname;
-  private final String nickname;
-  private final String title;
-  private final String company;
-  private final String address;
-  private final String home;
-  private final String mobile;
-  private final String work;
-  private final String email;
-  private final String email2;
-  private final String email3;
-  private final String homepage;
-  private final String bday;
-  private final String bmonth;
-  private final String byear;
-  private final String group;
-  private final String address2;
-  private final String phone2;
-  private final String notes;
+  private String nickname;
+  private String title;
+  private String company;
+  private String address;
+  private String home;
+  private String mobile;
+  private String work;
+  private String email;
+  private String email2;
+  private String email3;
+  private String homepage;
+  private String bday;
+  private String bmonth;
+  private String byear;
+  private String group;
+  private String address2;
+  private String phone2;
+  private String notes;
 
   public ContactData(int id, String firstname, String middlename, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String email, String email2, String email3, String homepage, String bday, String bmonth, String byear, String group, String address2, String phone2, String notes) {
     this.id = id;
@@ -48,6 +48,12 @@ public class ContactData {
     this.address2 = address2;
     this.phone2 = phone2;
     this.notes = notes;
+  }
+
+  public ContactData(int id, String firstname, String lastname) {
+    this.id = id;
+    this.firstname = firstname;
+    this.lastname = lastname;
   }
 
   public ContactData(String firstname, String middlename, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String email, String email2, String email3, String homepage, String bday, String bmonth, String byear, String group, String address2, String phone2, String notes) {
