@@ -1,27 +1,52 @@
 <list>
   <group>
-    <name>test 0</name>
-    <header>header 0</header>
-    <footer>footer 0</footer>
+    <name>Test 0</name>
+    <header>Header 0</header>
+    <footer>Footer 0</footer>
   </group>
   <group>
-    <name>test 1</name>
-    <header>header 1</header>
-    <footer>footer 1</footer>
+    <name>Test 1</name>
+    <header>Header 1</header>
+    <footer>Footer 1</footer>
   </group>
   <group>
-    <name>test 2</name>
-    <header>header 2</header>
-    <footer>footer 2</footer>
+    <name>Test 2</name>
+    <header>Header 2</header>
+    <footer>Footer 2</footer>
   </group>
   <group>
-    <name>test 3</name>
-    <header>header 3</header>
-    <footer>footer 3</footer>
+    <name>Test 3</name>
+    <header>Header 3</header>
+    <footer>Footer 3</footer>
   </group>
   <group>
-    <name>test 4</name>
-    <header>header 4</header>
-    <footer>footer 4</footer>
+    <name>Test 4</name>
+    <header>Header 4</header>
+    <footer>Footer 4</footer>
+  </group>
+  <group>
+    <name>Test 5</name>
+    <header>Header 5</header>
+    <footer>Footer 5</footer>
+  </group>
+  <group>
+    <name>Test 6</name>
+    <header>Header 6</header>
+    <footer>Footer 6</footer>
+  </group>
+  <group>
+    <name>Test 7</name>
+    <header>Header 7</header>
+    <footer>Footer 7</footer>
+  </group>
+  <group>
+    <name>Test 8</name>
+    <header>Header 8</header>
+    <footer>Footer 8</footer>
+  </group>
+  <group>
+    <name>Test 9</name>
+    <header>Header 9</header>
+    <footer>Footer 9</footer>
   </group>
 </list>
