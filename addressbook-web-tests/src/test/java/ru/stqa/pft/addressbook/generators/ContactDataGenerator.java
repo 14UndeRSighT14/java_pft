@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,30 +55,30 @@ public class ContactDataGenerator {
   private void saveAsJson (List<ContactData> contacts, File file) throws IOException {
     Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
     String json = gson.toJson(contacts);
-    Writer writer = new FileWriter(file);
-    writer.write(json);
-    writer.close();
+    try (Writer writer = new FileWriter(file)){
+      writer.write(json);
+    }
   }
 
   private void saveAsXml (List<ContactData> contacts, File file) throws IOException {
     XStream xstream = new XStream();
     xstream.processAnnotations(ContactData.class);
     String xml = xstream.toXML(contacts);
-    Writer writer = new FileWriter(file);
-    writer.write(xml);
-    writer.close();
+    try (Writer writer = new FileWriter(file)){
+      writer.write(xml);
+    }
   }
 
   private void saveAsCsv(List<ContactData> contacts, File file) throws IOException {
-    Writer writer = new FileWriter(file);
-    for (ContactData contact: contacts){
-     writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getMiddlename(), contact.getLastname(),
-             contact.getNickname(), contact.getPhoto(), contact.getTitle(), contact.getCompany(), contact.getAddress(), contact.getHome(),
-             contact.getMobile(), contact.getWork(), contact.getEmail(), contact.getEmail2(), contact.getEmail3(),
-             contact.getHomepage(), contact.getBday(), contact.getBmonth(), contact.getByear(), contact.getGroup(),
-             contact.getAddress2(), contact.getPhone2(), contact.getNotes()));
+    try (Writer writer = new FileWriter(file)){
+      for (ContactData contact: contacts){
+        writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getMiddlename(), contact.getLastname(),
+                contact.getNickname(), contact.getPhoto(), contact.getTitle(), contact.getCompany(), contact.getAddress(), contact.getHome(),
+                contact.getMobile(), contact.getWork(), contact.getEmail(), contact.getEmail2(), contact.getEmail3(),
+                contact.getHomepage(), contact.getBday(), contact.getBmonth(), contact.getByear(), contact.getGroup(),
+                contact.getAddress2(), contact.getPhone2(), contact.getNotes()));
+      }
     }
-    writer.close();
   }
 
   private List<ContactData> generateContacts(int count) {

@@ -34,19 +34,4 @@
     <header>Header 6</header>
     <footer>Footer 6</footer>
   </group>
-  <group>
-    <name>Test 7</name>
-    <header>Header 7</header>
-    <footer>Footer 7</footer>
-  </group>
-  <group>
-    <name>Test 8</name>
-    <header>Header 8</header>
-    <footer>Footer 8</footer>
-  </group>
-  <group>
-    <name>Test 9</name>
-    <header>Header 9</header>
-    <footer>Footer 9</footer>
-  </group>
 </list>
