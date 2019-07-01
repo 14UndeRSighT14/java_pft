@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactCreationTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-01T16:38:04" hostname="UndeRSighT" time="76.566">
+  <properties/>
+  <testcase name="testContactCreation[0](ContactData{id=0, firstname='FirstName 0', lastname='Lastname 0'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="15.165"/>
+  <testcase name="testContactCreation[1](ContactData{id=0, firstname='FirstName 1', lastname='Lastname 1'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="9.944"/>
+  <testcase name="testContactCreation[2](ContactData{id=0, firstname='FirstName 2', lastname='Lastname 2'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="10.033"/>
+  <testcase name="testContactCreation[3](ContactData{id=0, firstname='FirstName 3', lastname='Lastname 3'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="10.338"/>
+  <testcase name="testContactCreation[4](ContactData{id=0, firstname='FirstName 4', lastname='Lastname 4'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="10.186"/>
+  <testcase name="testContactCreation[5](ContactData{id=0, firstname='FirstName 5', lastname='Lastname 5'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="10.382"/>
+  <testcase name="testContactCreation[6](ContactData{id=0, firstname='FirstName 6', lastname='Lastname 6'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="10.516"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Security framework of XStream not initialized, XStream is probably vulnerable.
+]]></system-err>
+</testsuite>
