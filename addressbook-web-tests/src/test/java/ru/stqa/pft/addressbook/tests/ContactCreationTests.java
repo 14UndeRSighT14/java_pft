@@ -56,10 +56,10 @@ public class ContactCreationTests extends TestBase {
   @Test (dataProvider = "validContactsFromXml")
   public void testContactCreation(ContactData contact) throws Exception {
     app.goTo().contactPage();
-    Contacts before = app.contact().all();
+    Contacts before = app.db().contacts();
     app.contact().create(contact, true);
     assertThat(app.contact().count(), equalTo(before.size() + 1));
-    Contacts after = app.contact().all();
+    Contacts after = app.db().contacts();
     assertThat(after, equalTo(
             before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
   }

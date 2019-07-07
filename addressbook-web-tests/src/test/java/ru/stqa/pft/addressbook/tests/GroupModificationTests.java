@@ -7,7 +7,6 @@ import ru.stqa.pft.addressbook.model.Groups;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.assertEquals;
 
 public class GroupModificationTests extends TestBase{
 
@@ -21,7 +20,7 @@ public class GroupModificationTests extends TestBase{
 
   @Test
   public void testGroupModification() throws Exception {
-   Groups before = app.db().groups();
+    Groups before = app.db().groups();
     GroupData modifiedGroup = before.iterator().next();
     GroupData group = new GroupData().withId(modifiedGroup.getId()).withName("izmtest1").withFooter("test2").withHeader("test3");
     app.goTo().groupPage();

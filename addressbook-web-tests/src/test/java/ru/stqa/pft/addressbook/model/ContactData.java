@@ -363,14 +363,50 @@ public class ContactData {
 
     if (id != that.id) return false;
     if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
-    return lastname != null ? lastname.equals(that.lastname) : that.lastname == null;
+    if (middlename != null ? !middlename.equals(that.middlename) : that.middlename != null) return false;
+    if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
+    if (nickname != null ? !nickname.equals(that.nickname) : that.nickname != null) return false;
+    if (title != null ? !title.equals(that.title) : that.title != null) return false;
+    if (company != null ? !company.equals(that.company) : that.company != null) return false;
+    if (address != null ? !address.equals(that.address) : that.address != null) return false;
+    if (home != null ? !home.equals(that.home) : that.home != null) return false;
+    if (mobile != null ? !mobile.equals(that.mobile) : that.mobile != null) return false;
+    if (work != null ? !work.equals(that.work) : that.work != null) return false;
+    if (email != null ? !email.equals(that.email) : that.email != null) return false;
+    if (email2 != null ? !email2.equals(that.email2) : that.email2 != null) return false;
+    if (email3 != null ? !email3.equals(that.email3) : that.email3 != null) return false;
+    if (homepage != null ? !homepage.equals(that.homepage) : that.homepage != null) return false;
+    if (bday != null ? !bday.equals(that.bday) : that.bday != null) return false;
+    if (bmonth != null ? !bmonth.equals(that.bmonth) : that.bmonth != null) return false;
+    if (byear != null ? !byear.equals(that.byear) : that.byear != null) return false;
+    if (address2 != null ? !address2.equals(that.address2) : that.address2 != null) return false;
+    if (phone2 != null ? !phone2.equals(that.phone2) : that.phone2 != null) return false;
+    return notes != null ? notes.equals(that.notes) : that.notes == null;
   }
 
   @Override
   public int hashCode() {
     int result = id;
     result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+    result = 31 * result + (middlename != null ? middlename.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+    result = 31 * result + (nickname != null ? nickname.hashCode() : 0);
+    result = 31 * result + (title != null ? title.hashCode() : 0);
+    result = 31 * result + (company != null ? company.hashCode() : 0);
+    result = 31 * result + (address != null ? address.hashCode() : 0);
+    result = 31 * result + (home != null ? home.hashCode() : 0);
+    result = 31 * result + (mobile != null ? mobile.hashCode() : 0);
+    result = 31 * result + (work != null ? work.hashCode() : 0);
+    result = 31 * result + (email != null ? email.hashCode() : 0);
+    result = 31 * result + (email2 != null ? email2.hashCode() : 0);
+    result = 31 * result + (email3 != null ? email3.hashCode() : 0);
+    result = 31 * result + (homepage != null ? homepage.hashCode() : 0);
+    result = 31 * result + (bday != null ? bday.hashCode() : 0);
+    result = 31 * result + (bmonth != null ? bmonth.hashCode() : 0);
+    result = 31 * result + (byear != null ? byear.hashCode() : 0);
+    result = 31 * result + (address2 != null ? address2.hashCode() : 0);
+    result = 31 * result + (phone2 != null ? phone2.hashCode() : 0);
+    result = 31 * result + (notes != null ? notes.hashCode() : 0);
     return result;
   }
 
