@@ -3,9 +3,11 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.HashSet;
@@ -174,4 +176,31 @@ public class ContactHelper extends BaseHelper {
             .withAddress(address).withEmail(email).withEmail2(email2).withEmail3(email3)
             .withHome(home).withMobile(mobile).withWork(work).withPhone2(phone2);
   }
+
+  public void addToGroup(ContactData contact, GroupData group) {
+    chooseCheckboxById(contact.getId());
+    click(By.name("to_group"));
+    new Select(wd.findElement(By.name("to_group"))).selectByValue(Integer.toString(group.getId()));
+    click(By.name("add"));
+  }
+
+  public void removeContactFromGroup(ContactData contact) {
+    chooseCheckboxById(contact.getId());
+    click(By.name("remove"));
+  }
+
+  public void chooseCheckboxById(int id) {
+    click(By.cssSelector("input[value='" + id + "']"));
+  }
+
+  public void groupFilter(GroupData group) {
+    click(By.name("group"));
+    new Select(wd.findElement(By.name("group"))).selectByValue(Integer.toString(group.getId()));
+  }
+
+  public void groupFilterDefault() {
+    click(By.name("group"));
+    selectListValue(By.name("group"), "[all]");
+  }
+
 }

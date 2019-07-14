@@ -39,6 +39,7 @@ public class ContactModificationTests extends TestBase{
 
   @Test
   public void testContactModification() throws Exception {
+    app.goTo().contactPage();
     Contacts before = app.db().contacts();
     ContactData modifiedContact = before.iterator().next();
     ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstname("IzmName1")
