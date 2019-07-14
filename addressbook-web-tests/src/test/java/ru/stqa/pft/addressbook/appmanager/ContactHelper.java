@@ -52,9 +52,12 @@ public class ContactHelper extends BaseHelper {
     selectListValue(By.name("bday"), contactData.getBday());
     selectListValue(By.name("bmonth"), contactData.getBmonth());
     if (creation) {
-      selectListValue(By.name("new_group"), contactData.getGroup());
-    } else {
-      Assert.assertFalse(isElementPresent(By.name("new_group")));
+      if (contactData.getGroups().size() > 0) {
+        Assert.assertTrue(contactData.getGroups().size() == 1);
+        selectListValue(By.name("new_group"), contactData.getGroups().iterator().next().getName());
+      } else {
+        Assert.assertFalse(isElementPresent(By.name("new_group")));
+      }
     }
     type(By.name("byear"), contactData.getByear());
     type(By.name("address2"), contactData.getAddress2());

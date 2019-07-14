@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -72,11 +73,11 @@ public class ContactDataGenerator {
   private void saveAsCsv(List<ContactData> contacts, File file) throws IOException {
     try (Writer writer = new FileWriter(file)){
       for (ContactData contact: contacts){
-        writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getMiddlename(), contact.getLastname(),
+        writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getMiddlename(), contact.getLastname(),
                 contact.getNickname(), contact.getPhoto(), contact.getTitle(), contact.getCompany(), contact.getAddress(), contact.getHome(),
                 contact.getMobile(), contact.getWork(), contact.getEmail(), contact.getEmail2(), contact.getEmail3(),
-                contact.getHomepage(), contact.getBday(), contact.getBmonth(), contact.getByear(), contact.getGroup(),
-                contact.getAddress2(), contact.getPhone2(), contact.getNotes()));
+                contact.getHomepage(), contact.getBday(), contact.getBmonth(), contact.getByear(), contact.getAddress2(),
+                contact.getPhone2(), contact.getNotes()));
       }
     }
   }
@@ -101,9 +102,8 @@ public class ContactDataGenerator {
               .withEmail(String.format("Email1_%s@mail.ru", i)).withEmail2(String.format("Email2_%s@mail.ru", i))
               .withEmail3(String.format("Email3_%s@mail.ru", i)).withHomepage(String.format("www.test%s.ru", i))
               .withBday(String.format("%s", d)).withBmonth(String.format("%s", month[m]))
-              .withByear(String.format("%s", y)).withGroup(String.format("Test %s", i))
-              .withAddress2(String.format("Address2 %s", i)).withPhone2(String.format("8987444444%s", n))
-              .withNotes(String.format("Notes %s", i)));
+              .withByear(String.format("%s", y)).withAddress2(String.format("Address2 %s", i))
+              .withPhone2(String.format("8987444444%s", n)).withNotes(String.format("Notes %s", i)));
     }
     return contacts;
   }

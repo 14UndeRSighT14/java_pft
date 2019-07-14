@@ -7,6 +7,8 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "addressbook")
@@ -95,10 +97,6 @@ public class ContactData {
   @Expose
   private String byear;
 
-  @Transient
-  @Expose
-  private String group;
-
   @Column(name = "address2")
   @Type(type = "text")
   @Expose
@@ -127,6 +125,15 @@ public class ContactData {
   @Expose
   private String photo;
 
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "address_in_groups",
+          joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupData> groups = new HashSet<GroupData>();
+
+  public Groups getGroups() {
+    return new Groups(groups);
+  }
+
   public File getPhoto() {
     return new File (photo);
   }
@@ -153,8 +160,6 @@ public class ContactData {
     this.allEmails = allEmails;
     return this;
   }
-
-
 
   public String getFirstname() {
     return firstname;
@@ -222,10 +227,6 @@ public class ContactData {
 
   public String getByear() {
     return byear;
-  }
-
-  public String getGroup() {
-    return group;
   }
 
   public String getAddress2() {
@@ -334,11 +335,6 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withGroup(String group) {
-    this.group = group;
-    return this;
-  }
-
   public ContactData withAddress2(String address2) {
     this.address2 = address2;
     return this;
@@ -351,6 +347,16 @@ public class ContactData {
 
   public ContactData withNotes(String notes) {
     this.notes = notes;
+    return this;
+  }
+
+  public ContactData withGroup(Groups groups) {
+    this.groups = groups;
+    return this;
+  }
+
+  public ContactData inGroup(GroupData group) {
+    groups.add(group);
     return this;
   }
 

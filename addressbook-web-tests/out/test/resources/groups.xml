@@ -3,35 +3,30 @@
     <name>Test 0</name>
     <header>Header 0</header>
     <footer>Footer 0</footer>
+    <contacts/>
   </group>
   <group>
     <name>Test 1</name>
     <header>Header 1</header>
     <footer>Footer 1</footer>
+    <contacts/>
   </group>
   <group>
     <name>Test 2</name>
     <header>Header 2</header>
     <footer>Footer 2</footer>
+    <contacts/>
   </group>
   <group>
     <name>Test 3</name>
     <header>Header 3</header>
     <footer>Footer 3</footer>
+    <contacts/>
   </group>
   <group>
     <name>Test 4</name>
     <header>Header 4</header>
     <footer>Footer 4</footer>
-  </group>
-  <group>
-    <name>Test 5</name>
-    <header>Header 5</header>
-    <footer>Footer 5</footer>
-  </group>
-  <group>
-    <name>Test 6</name>
-    <header>Header 6</header>
-    <footer>Footer 6</footer>
+    <contacts/>
   </group>
 </list>

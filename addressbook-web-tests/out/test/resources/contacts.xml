@@ -7,21 +7,21 @@
     <title>Title 0</title>
     <company>Company 0</company>
     <address>Address 0</address>
-    <home>8(3472)111110</home>
-    <mobile>89871111110</mobile>
-    <work>89872222220</work>
+    <home>8(3472)111114</home>
+    <mobile>89871111114</mobile>
+    <work>89872222224</work>
     <email>Email1_0@mail.ru</email>
     <email2>Email2_0@mail.ru</email2>
     <email3>Email3_0@mail.ru</email3>
     <homepage>www.test0.ru</homepage>
-    <bday>24</bday>
+    <bday>7</bday>
     <bmonth>January</bmonth>
-    <byear>1917</byear>
-    <group>Test 0</group>
+    <byear>1966</byear>
     <address2>Address2 0</address2>
-    <phone2>89874444440</phone2>
+    <phone2>89874444444</phone2>
     <notes>Notes 0</notes>
     <photo>src\test\resources\test.png</photo>
+    <groups/>
   </contact>
   <contact>
     <firstname>FirstName 1</firstname>
@@ -31,21 +31,21 @@
     <title>Title 1</title>
     <company>Company 1</company>
     <address>Address 1</address>
-    <home>8(3472)111116</home>
-    <mobile>89871111116</mobile>
-    <work>89872222226</work>
+    <home>8(3472)111113</home>
+    <mobile>89871111113</mobile>
+    <work>89872222223</work>
     <email>Email1_1@mail.ru</email>
     <email2>Email2_1@mail.ru</email2>
     <email3>Email3_1@mail.ru</email3>
     <homepage>www.test1.ru</homepage>
-    <bday>7</bday>
-    <bmonth>July</bmonth>
-    <byear>1902</byear>
-    <group>Test 1</group>
+    <bday>9</bday>
+    <bmonth>January</bmonth>
+    <byear>1906</byear>
     <address2>Address2 1</address2>
-    <phone2>89874444446</phone2>
+    <phone2>89874444443</phone2>
     <notes>Notes 1</notes>
     <photo>src\test\resources\test.png</photo>
+    <groups/>
   </contact>
   <contact>
     <firstname>FirstName 2</firstname>
@@ -55,21 +55,21 @@
     <title>Title 2</title>
     <company>Company 2</company>
     <address>Address 2</address>
-    <home>8(3472)111118</home>
-    <mobile>89871111118</mobile>
-    <work>89872222228</work>
+    <home>8(3472)111114</home>
+    <mobile>89871111114</mobile>
+    <work>89872222224</work>
     <email>Email1_2@mail.ru</email>
     <email2>Email2_2@mail.ru</email2>
     <email3>Email3_2@mail.ru</email3>
     <homepage>www.test2.ru</homepage>
-    <bday>12</bday>
-    <bmonth>June</bmonth>
-    <byear>1956</byear>
-    <group>Test 2</group>
+    <bday>19</bday>
+    <bmonth>May</bmonth>
+    <byear>1960</byear>
     <address2>Address2 2</address2>
-    <phone2>89874444448</phone2>
+    <phone2>89874444444</phone2>
     <notes>Notes 2</notes>
     <photo>src\test\resources\test.png</photo>
+    <groups/>
   </contact>
   <contact>
     <firstname>FirstName 3</firstname>
@@ -79,21 +79,21 @@
     <title>Title 3</title>
     <company>Company 3</company>
     <address>Address 3</address>
-    <home>8(3472)111111</home>
-    <mobile>89871111111</mobile>
-    <work>89872222221</work>
+    <home>8(3472)111116</home>
+    <mobile>89871111116</mobile>
+    <work>89872222226</work>
     <email>Email1_3@mail.ru</email>
     <email2>Email2_3@mail.ru</email2>
     <email3>Email3_3@mail.ru</email3>
     <homepage>www.test3.ru</homepage>
-    <bday>5</bday>
-    <bmonth>March</bmonth>
-    <byear>1941</byear>
-    <group>Test 3</group>
+    <bday>17</bday>
+    <bmonth>June</bmonth>
+    <byear>1989</byear>
     <address2>Address2 3</address2>
-    <phone2>89874444441</phone2>
+    <phone2>89874444446</phone2>
     <notes>Notes 3</notes>
     <photo>src\test\resources\test.png</photo>
+    <groups/>
   </contact>
   <contact>
     <firstname>FirstName 4</firstname>
@@ -103,68 +103,20 @@
     <title>Title 4</title>
     <company>Company 4</company>
     <address>Address 4</address>
-    <home>8(3472)111116</home>
-    <mobile>89871111116</mobile>
-    <work>89872222226</work>
+    <home>8(3472)111114</home>
+    <mobile>89871111114</mobile>
+    <work>89872222224</work>
     <email>Email1_4@mail.ru</email>
     <email2>Email2_4@mail.ru</email2>
     <email3>Email3_4@mail.ru</email3>
     <homepage>www.test4.ru</homepage>
-    <bday>3</bday>
-    <bmonth>August</bmonth>
-    <byear>1918</byear>
-    <group>Test 4</group>
+    <bday>2</bday>
+    <bmonth>November</bmonth>
+    <byear>1942</byear>
     <address2>Address2 4</address2>
-    <phone2>89874444446</phone2>
+    <phone2>89874444444</phone2>
     <notes>Notes 4</notes>
     <photo>src\test\resources\test.png</photo>
-  </contact>
-  <contact>
-    <firstname>FirstName 5</firstname>
-    <middlename>Middlename 5</middlename>
-    <lastname>Lastname 5</lastname>
-    <nickname>Nickname 5</nickname>
-    <title>Title 5</title>
-    <company>Company 5</company>
-    <address>Address 5</address>
-    <home>8(3472)111112</home>
-    <mobile>89871111112</mobile>
-    <work>89872222222</work>
-    <email>Email1_5@mail.ru</email>
-    <email2>Email2_5@mail.ru</email2>
-    <email3>Email3_5@mail.ru</email3>
-    <homepage>www.test5.ru</homepage>
-    <bday>27</bday>
-    <bmonth>October</bmonth>
-    <byear>1995</byear>
-    <group>Test 5</group>
-    <address2>Address2 5</address2>
-    <phone2>89874444442</phone2>
-    <notes>Notes 5</notes>
-    <photo>src\test\resources\test.png</photo>
-  </contact>
-  <contact>
-    <firstname>FirstName 6</firstname>
-    <middlename>Middlename 6</middlename>
-    <lastname>Lastname 6</lastname>
-    <nickname>Nickname 6</nickname>
-    <title>Title 6</title>
-    <company>Company 6</company>
-    <address>Address 6</address>
-    <home>8(3472)111117</home>
-    <mobile>89871111117</mobile>
-    <work>89872222227</work>
-    <email>Email1_6@mail.ru</email>
-    <email2>Email2_6@mail.ru</email2>
-    <email3>Email3_6@mail.ru</email3>
-    <homepage>www.test6.ru</homepage>
-    <bday>5</bday>
-    <bmonth>June</bmonth>
-    <byear>1967</byear>
-    <group>Test 6</group>
-    <address2>Address2 6</address2>
-    <phone2>89874444447</phone2>
-    <notes>Notes 6</notes>
-    <photo>src\test\resources\test.png</photo>
+    <groups/>
   </contact>
 </list>
