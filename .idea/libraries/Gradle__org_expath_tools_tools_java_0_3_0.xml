@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.expath.tools:tools-java:0.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.expath.tools/tools-java/0.3.0/1ddc3e469fcaf234b59cf21358227fcb314eacd6/tools-java-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.expath.tools/tools-java/0.3.0/92e8aedbe027e2706018a932602897b8dc43efe1/tools-java-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.expath.http.client:http-client-java:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.expath.http.client/http-client-java/1.2.0/3979df7d9a482b32d660730b39a226295dcad03/http-client-java-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.expath.http.client/http-client-java/1.2.0/83d1800ef1c20c11a1c3887131e9a2aebcbb3034/http-client-java-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
