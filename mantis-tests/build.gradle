@@ -9,6 +9,7 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.hamcrest:java-hamcrest:2.0.0.0'
     implementation 'org.expath.http.client:http-client-java:1.2.0'
+    implementation 'commons-net:commons-net:3.6'
 }
 
 
