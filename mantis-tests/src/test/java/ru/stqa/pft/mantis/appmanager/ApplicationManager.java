@@ -22,6 +22,9 @@ public class ApplicationManager {
   private FtpHelper ftp;
   private MailHelper mailHelper;
   private JamesHelper jamesHelper;
+  private NavigationHelper navigationHelper;
+  private ActionUserHelper actionUserHelper;
+  private DBHelper dbHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -91,5 +94,25 @@ public class ApplicationManager {
     return jamesHelper;
   }
 
+  public NavigationHelper navigation() {
+    if (navigationHelper == null) {
+      navigationHelper = new NavigationHelper(this);
+    }
+    return navigationHelper;
+  }
+
+  public ActionUserHelper action() {
+    if (actionUserHelper == null) {
+      actionUserHelper = new ActionUserHelper(this);
+    }
+    return actionUserHelper;
+  }
+
+  public DBHelper db() {
+    if (dbHelper == null) {
+      dbHelper = new DBHelper(this);
+    }
+    return dbHelper;
+  }
 }
 
