@@ -12,7 +12,6 @@ import java.util.Set;
 
 public class TestBase {
 
-
   // Получение списка баг-репортов
   protected Set<Issue> getIssues() throws IOException {
     String json = RestAssured.get("http://bugify.stqa.ru/api/issues.json?limit=500").asString();
