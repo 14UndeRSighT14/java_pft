@@ -20,6 +20,7 @@
     <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:8.0.16" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" level="project" />
     <orderEntry type="library" name="Gradle: biz.futureware.mantis:mantis-axis-soap-client:1.2.19" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.rpc:javax.xml.rpc-api:1.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Gradle: org.apache-extras.beanshell:bsh:2.0b6" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" level="project" />
@@ -67,8 +68,8 @@
     <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.11" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.jaxb:txw2:2.3.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-discovery:commons-discovery:0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jaxb:txw2:2.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.istack:istack-commons-runtime:3.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.jvnet.staxex:stax-ex:1.8" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.fastinfoset:FastInfoset:1.2.15" level="project" />
