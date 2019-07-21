@@ -10,6 +10,6 @@ dependencies {
     implementation 'org.testng:testng:6.14.2'
 }
 
-test{
+test {
     useTestNG()
 }
